@@ -12,7 +12,7 @@ public class MoneyControlHomePage {
 	public MoneyControlHomePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+	//Testcase2: Navigate to FindFunds
 	public void navigateToFindFunds() {
 		
 		WebElement findFund = driver.findElement(By.xpath("//li[@class='menu_l1  sub_nav']/a[@title='Mutual Funds']"));
