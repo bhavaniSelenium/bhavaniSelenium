@@ -9,7 +9,10 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
 	
 public WebDriver driver;
-
+@BeforeClass
+public void m1() {
+	
+}
 @BeforeMethod	
 public void launchBrowser() {
 	
