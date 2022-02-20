@@ -10,6 +10,8 @@ public class BaseTest {
 	
 public WebDriver driver;
 
+
+// launching the browser
 @BeforeMethod	
 public void launchBrowser() {
 	
