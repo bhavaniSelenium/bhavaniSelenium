@@ -1,6 +1,6 @@
 package com.batch.automation.base;
 
-import org.junit.BeforeClass;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
 	
 public WebDriver driver;
-
+ //launching the browser
 @BeforeMethod	
 public void launchBrowser() {
 	
