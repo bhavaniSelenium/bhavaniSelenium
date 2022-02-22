@@ -4,15 +4,19 @@ import java.sql.Driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.batch.automation.base.BaseTest;
 import com.batch.automation.page.LoginToMoneyControl;
 import com.batch.automation.page.MoneyControlHomePage;
 
+@Listeners(com.batch.automation.util.Listeners.class)
 public class LoginToMoneyControlTest extends BaseTest {
-	
+
 //	public static void main(String[] args) {
+	
+	
 	@Test
 	//Test Case 1:- Login to moneycontrol Application
 	public void loginTest() {

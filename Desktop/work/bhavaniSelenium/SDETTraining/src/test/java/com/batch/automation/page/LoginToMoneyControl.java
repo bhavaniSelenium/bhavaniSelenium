@@ -59,8 +59,10 @@ public class LoginToMoneyControl {
 		driver.findElement(By.xpath("//a[@title='Log In']")).click();
 		driver.switchTo().frame("myframe");
 		driver.findElement(By.xpath("(//input[@id='email'])[2]")).click();
-		driver.findElement(By.xpath("(//input[@id='email'])[2]")).sendKeys();
+		
+		driver.findElement(By.xpath("(//input[@id='email'])[]")).sendKeys();
 		driver.findElement(By.xpath("(//input[@id='pwd'])[2]")).click();
+		
 		driver.findElement(By.xpath("(//input[@id='pwd'])[2]")).sendKeys();
 	}
 	
