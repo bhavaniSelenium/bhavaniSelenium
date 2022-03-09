@@ -15,11 +15,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.batch.automation.util.WebElementActions;
 
-public class LoginToMoneyControl {
-
-    
+public class LoginToMoneyControl { 
 //		
-    @FindBy(xpath = "//a[text()='moneycontrol.com']")
+    @FindBy(xpath = "//a[text()='moneycontrol.com']") 
     WebElement moneyControlLink;
     
     @FindBy(xpath="//a[@title='Hello, Login']")
@@ -30,8 +28,8 @@ public class LoginToMoneyControl {
 //    @FindBy(how=How.XPATH, using="//a[text()='moneycontrol.com']")
 //    WebElement moneyControlLink3;
     
-    WebDriver driver;
-    WebElementActions actions;
+    WebDriver driver; 
+    WebElementActions actions; 
     public LoginToMoneyControl(WebDriver driver) {
     	this.driver = driver;
     	this.actions=new WebElementActions(driver);

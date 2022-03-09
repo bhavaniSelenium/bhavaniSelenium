@@ -5,17 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
-	
+		
 public static WebDriver driver;
+String filePath = System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe";
 
-@BeforeMethod	
+@BeforeMethod(alwaysRun = true)
+@Parameters({ "browser" })	
 public void launchBrowser() {
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\JVM REDDY\\eclipse-workspace\\SeleniumPrograms\\Drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", filePath);
     driver= new ChromeDriver();
-    
 }
 @AfterMethod
 public void closeBrowser() {

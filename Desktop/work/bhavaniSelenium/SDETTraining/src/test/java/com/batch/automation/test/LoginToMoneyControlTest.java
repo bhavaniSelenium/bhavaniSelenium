@@ -37,5 +37,4 @@ public class LoginToMoneyControlTest extends BaseTest {
         MoneyControlHomePage  moneyControlHomePage = new MoneyControlHomePage(driver);
         moneyControlHomePage.navigateToFindFunds();        
 	}
-
 }

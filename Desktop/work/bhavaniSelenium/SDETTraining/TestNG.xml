@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="SDET" parallel="false" preserve-order="true">
+	<listeners>
+		<listener
+			class-name="com.batch.automation.util.Listeners" />
+	</listeners>
+	
+	<test name="MoneyControlLogin" preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.batch.automation.test.LoginToMoneyControlTest">
+				<methods>
+					<include name="loginTest" />
+					<include name = "findFunds"/>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

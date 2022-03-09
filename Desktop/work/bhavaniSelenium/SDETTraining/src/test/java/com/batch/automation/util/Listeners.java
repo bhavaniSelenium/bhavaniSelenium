@@ -48,7 +48,5 @@ public class Listeners  implements ITestListener {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
-  
  }
  }
