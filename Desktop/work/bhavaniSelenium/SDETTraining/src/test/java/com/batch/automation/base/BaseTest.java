@@ -1,6 +1,5 @@
 package com.batch.automation.base;
 
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -11,14 +10,14 @@ public class BaseTest {
 public WebDriver driver;
 //Launch the Browser
 @BeforeMethod	
-public void launchBrowser() {
+public void launchdriver() {
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\JVM REDDY\\eclipse-workspace\\SeleniumPrograms\\Drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\sandhya\\GitRepo\\bhavaniSelenium\\Desktop\\work\\bhavaniSelenium\\SDETTraining\\Driver\\chromedriver.exe");
     driver= new ChromeDriver();
     
 }
 @AfterMethod
-public void closeBrowser() {
+public void closedriver() {
 	driver.close();
 }
 }
